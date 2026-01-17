@@ -2,10 +2,10 @@ pipeline {
     agent any
     
     tools {
-        // 💡 PASTIKAN: Nama 'Maven' dan 'JDK17' sesuai dengan yang ada di 
+        // 💡 PASTIKAN: Nama 'MAVEN' sesuai dengan yang ada di 
         // Manage Jenkins -> Tools -> Global Tool Configuration
         maven 'MAVEN'
-        jdk 'JDK21'
+        // Menggunakan Java bawaan dari Jenkins container (tidak perlu konfigurasi JDK terpisah)
     }
     
     environment {
